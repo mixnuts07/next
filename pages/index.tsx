@@ -17,8 +17,11 @@ export default function Home() {
         <div>
           <Counter />
           <StorageFunc />
-          <Link href="./posts/">
-            <p>POST Page</p>
+          <Link href="./ssr/">
+            <p>SSR : POST Page</p>
+          </Link>
+          <Link href="./ssg/">
+            <p>SSG : POST Page</p>
           </Link>
         </div>
       </main>

@@ -1,4 +1,4 @@
-export default function post({ post }) {
+export default function ssr({ post }) {
   return (
     <div className="text-black leading-8">
       <p>ID : {post.id}</p>
@@ -11,7 +11,7 @@ export default function post({ post }) {
 export async function getServerSideProps(context) {
   console.log("params...", context.params);
   //   console.log(context);
-  const id = context.params.posts;
+  const id = context.params.ssr;
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
   const post = await res.json();
   if (!Object.keys(post).length) {
