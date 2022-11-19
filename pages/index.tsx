@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Counter from "../components/redux/component/Counter";
 import StorageFunc from "../components/LocalStorage/StorageFunc";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
         <div>
           <Counter />
           <StorageFunc />
+          <Link href="./posts/">
+            <p>POST Page</p>
+          </Link>
         </div>
       </main>
     </div>
