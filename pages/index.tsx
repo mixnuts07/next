@@ -23,6 +23,9 @@ export default function Home() {
           <Link href="./ssg/">
             <p>SSG : POST Page</p>
           </Link>
+          <Link href="./swr/">
+            <p>SWR : POST Page</p>
+          </Link>
         </div>
       </main>
     </div>
