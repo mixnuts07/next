@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { SessionProvider } from "next-auth/react";
 import { store } from "../components/redux/store";
 import { Provider } from "react-redux";
+import Layout from "../components/layouts/Layout";
 
 export default function App({
   Component,
@@ -11,7 +12,9 @@ export default function App({
   return (
     <SessionProvider session={session}>
       <Provider store={store}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </Provider>
     </SessionProvider>
   );
