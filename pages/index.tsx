@@ -50,9 +50,7 @@ export default function Home({ data }) {
               <li key={user.id}>{user.name}</li>
             ))}
           </ul>
-        </div>
-        <div className="underline">
-          <ul>
+          <ul className="underline">
             {data.users.map((user) => (
               <li key={user.id}>{user.name}</li>
             ))}
