@@ -8,15 +8,20 @@ First, run the development server:
 - [2. Learn More](#2-learn-more)
 - [3. Deploy on Vercel](#3-deploy-on-vercel)
 
-```bash
-Next Tutorial
-Redux Toolkit
-Tailwindcss
+```ライブラリ
+swr
+React-Hook-Form
+zod
 NextAuth.js
+Rechart
+dayjs
+```
+
+```使用テック
+Next
+Redux Toolkit
 GraphQL (Apollo) → DynamoDB
 Prisma　→ RDS
-React-Hook-Form
-
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
