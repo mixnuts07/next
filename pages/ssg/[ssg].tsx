@@ -32,5 +32,5 @@ export async function getStaticProps(context) {
   if (!Object.keys(post).length) {
     return { notFound: true };
   }
-  return { props: { post } };
+  return { props: { post }, revalidate: 1000 };
 }

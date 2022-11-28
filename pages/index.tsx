@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import Counter from "../components/redux/component/Counter";
-import StorageFunc from "../components/localStorage/StorageFunc";
-import Render from "../components/rendering/Render";
+import Counter from "../src/stores/component/Counter";
+import StorageFunc from "../src/components/localStorage/StorageFunc";
+import Render from "../src/components/rendering/Render";
 
 type Users = {
   id: string;
