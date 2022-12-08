@@ -16,6 +16,7 @@ zod
 NextAuth.js
 Rechart
 dayjs
+Recoil
 ```
 
 使用テック
@@ -25,4 +26,9 @@ Next
 Redux Toolkit
 GraphQL (Apollo) → DynamoDB
 Prisma　→ RDS
+```
+
+```CI/CD
+lint-staged
+husky
 ```

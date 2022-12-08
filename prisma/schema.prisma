@@ -1,0 +1,23 @@
+
+// Generator .. Prisma CLientを作成するために使用
+generator client {
+  provider = "prisma-client-js"
+}
+
+// DataSource .. Prismaが接続するDBの設定。
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Model .. ①データベースのテーブルを表現。②生成されたPrisma Client APIの基盤として使用する。
+model User{
+  id Int @id @default(autoincrement())
+  email String @unique
+  name String?
+}
+
+// Migrate .. Modelで定義されたテーブルを作成する
+// DB SchemaとPrisma Schemaの同期を維持する。
+// DB内の既存データの維持
+// npx prisma migrate dev
