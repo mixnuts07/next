@@ -17,6 +17,9 @@ NextAuth.js
 Rechart
 dayjs
 Recoil
+lint-staged
+huskey
+useQuery
 ```
 
 使用テック
