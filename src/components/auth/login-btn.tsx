@@ -13,8 +13,8 @@ export default function Component() {
   }
   return (
     <>
-      Not Sign in <br />
-      <button onClick={() => signIn()}>Sign In </button>
+      Not Signed in <br />
+      <button onClick={() => signIn()}>Sign In</button>
     </>
   );
 }

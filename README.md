@@ -20,6 +20,7 @@ Recoil
 lint-staged
 huskey
 useQuery
+Stripe
 ```
 
 使用テック
