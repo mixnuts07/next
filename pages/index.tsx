@@ -6,6 +6,8 @@ import StorageFunc from "../src/components/localStorage/StorageFunc";
 import Render from "../src/components/rendering/Render";
 import { ApolloClient, InMemoryCache, useQuery, gql } from "@apollo/client";
 import Login from "../src/components/auth/login-btn";
+import { RootForm } from "../src/components/hookForm/RootForm";
+
 const client = new ApolloClient({
   uri: "http://localhost:3000/api/graphql",
   cache: new InMemoryCache(),
@@ -83,7 +85,7 @@ export default function Home({ data }) {
     fetchUsers();
   }, []);
   return (
-    <div className="w-screen h-5/6 items-center justify-center flex">
+    <div className="w-screen h-5/6 items-center justify-center flex bg-slate-500">
       <Head>
         <title>Next.js</title>
         <meta name="description" content="Next.js" />
@@ -93,6 +95,7 @@ export default function Home({ data }) {
       <main>
         <div>
           <Login />
+          <RootForm />
           <DisplayLocations />
           <Counter />
           <StorageFunc />
