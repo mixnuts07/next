@@ -5,7 +5,7 @@ import Counter from "../src/stores/component/Counter";
 import StorageFunc from "../src/components/localStorage/StorageFunc";
 import Render from "../src/components/rendering/Render";
 import { ApolloClient, InMemoryCache, useQuery, gql } from "@apollo/client";
-import Login from "../src/components/auth/login-btn";
+// import Login from "../src/components/auth/login-btn";
 import { RootForm } from "../src/components/hookForm/RootForm";
 
 const client = new ApolloClient({
@@ -94,7 +94,7 @@ export default function Home({ data }) {
 
       <main>
         <div>
-          <Login />
+          {/* <Login /> */}
           <RootForm />
           <DisplayLocations />
           <Counter />

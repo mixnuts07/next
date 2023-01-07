@@ -2,16 +2,16 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "cdn2.thecatapi.com",
-        port: "",
-        pathname: "/images/**",
-      },
-    ],
-  },
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: "https",
+  //       hostname: "cdn2.thecatapi.com",
+  //       port: "",
+  //       pathname: "/images/**",
+  //     },
+  //   ],
+  // },
 };
 
 module.exports = nextConfig;
